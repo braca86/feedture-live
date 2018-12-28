@@ -42,6 +42,11 @@ h1 {
   font-size: 34px;
   line-height: 46px; }
 
+h2 {
+  font-size: 30px;
+  line-height: 45px;
+  font-family: 'Proxima Nova Sb'; }
+
 h3 {
   font-family: 'Proxima Nova Sb';
   font-size: 28px;
@@ -115,6 +120,26 @@ main section {
     main section#section-three img, main section#section-four img, main section#section-five img, main section#section-six img, main section#section-seven img, main section#section-eight img {
       max-width: 100%;
       margin-top: 40px; }
+  main section#section-eight {
+    padding: 100px 20px 224px;
+    background-image: url(assets/images/section-eight-mobile.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    main section#section-eight button {
+      width: 216px;
+      height: 56px;
+      margin-top: 32px; }
+
+footer {
+  padding: 34px 0;
+  text-align: center; }
+  footer p {
+    font-size: 16px;
+    color: #000000; }
+    footer p span {
+      display: block;
+      font-size: 13px; }
 
 
 /*# sourceMappingURL=main.css.map*/
