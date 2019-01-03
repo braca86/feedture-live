@@ -144,6 +144,22 @@ footer {
       display: block;
       font-size: 13px; }
 
+@keyframes floatminus {
+  0% {
+    transform: translatey(0px); }
+  50% {
+    transform: translatey(-20px); }
+  100% {
+    transform: translatey(0px); } }
+
+@keyframes floatplus {
+  0% {
+    transform: translatey(0px); }
+  50% {
+    transform: translatey(20px); }
+  100% {
+    transform: translatey(0px); } }
+
 @media only screen and (min-width: 768px) {
   header {
     justify-content: space-between; }
@@ -153,6 +169,16 @@ footer {
     display: block; }
   .circle-icon {
     position: absolute; }
+  .animation-float-minus {
+    transform: translatey(0px);
+    animation: floatminus 6s ease-in-out infinite; }
+  .animation-float-plus {
+    transform: translatey(0px);
+    animation: floatplus 6s ease-in-out infinite; }
+  .animation-delay-1s {
+    animation-delay: 1s; }
+  .animation-delay-2s {
+    animation-delay: 2s; }
   h2 {
     font-size: 50px;
     line-height: 70px; }
