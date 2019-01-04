@@ -23,7 +23,7 @@
       <section id="section-one">
         <div class="left">
           <h1>Turn your customer<br>into collaborators</h1>
-          <button type="button" name="button">get early access</button>
+          <button type="button" name="button" class="show-form-btn">get early access</button>
           <!-- <a href="#">Learn more</a> -->
         </div>
         <div class="right">
@@ -103,11 +103,24 @@
       </section>
       <section id="section-eight">
         <h2>Don't wait on us going live, we'll let you know when it happens</h2>
-        <button type="button" name="button">get early access</button>
+        <button type="button" name="button" class="show-form-btn">get early access</button>
       </section>
     </main>
     <footer>
       <p>Built with ❤️ in London & Russia<span>vita_nitzsche@yahoo.com</span></p>
     </footer>
+    <div id="feedture-form" style="display: none;">
+      <div id="form-wrapper">
+        <div class="warning-message" id="email-warning" style="display: none;">Email is already in use.</div>
+        <div class="warning-message" id="username-warning" style="display: none;">Username is already in use.</div>
+        <label for="email-validation-message">Email:</label>
+        <input type="email" id="email">
+        <div class="input-validation-message" id="email-validation-message" style="display: none;"></div>
+        <label for="username-validation-message">Username:</label>
+        <input type="text" id="username">
+        <div class="input-validation-message" id="username-validation-message" style="display: none;"></div>
+        <button type="button" id="send-form">reserve</button>
+      </div>
+    </div>
   <script type="text/javascript" src="bundle.js"></script></body>
 </html>

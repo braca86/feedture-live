@@ -144,6 +144,28 @@ footer {
       display: block;
       font-size: 13px; }
 
+#feedture-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; }
+  #feedture-form #form-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px; }
+    #feedture-form #form-wrapper .warning-message {
+      color: #000; }
+    #feedture-form #form-wrapper .input-validation-message {
+      color: red; }
+
 @keyframes floatminus {
   0% {
     transform: translatey(0px); }
