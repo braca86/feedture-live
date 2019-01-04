@@ -211,6 +211,16 @@ footer {
       left: 0; }
   main section {
     flex-direction: row; }
+    main section .moved-left {
+      transform: translateX(-2000px); }
+      main section .moved-left.bring-back {
+        transform: translateX(0px);
+        transition: transform 1s ease-out; }
+    main section .moved-right {
+      transform: translateX(2000px); }
+      main section .moved-right.bring-back {
+        transform: translateX(0px);
+        transition: transform 1s ease-out; }
     main section#section-three, main section#section-four, main section#section-five, main section#section-six, main section#section-seven {
       padding-top: 150px; }
     main section#section-two {
