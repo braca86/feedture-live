@@ -15,6 +15,8 @@
 
 body {
   font-family: 'Proxima Nova Rg';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #000000;
   background-color: #FFFFFF;
   position: relative;
@@ -67,7 +69,7 @@ p {
   line-height: 31px;
   color: #9A9A9A; }
 
-.img-desktop {
+.show-desktop {
   display: none; }
 
 header {
@@ -185,9 +187,9 @@ footer {
 @media only screen and (min-width: 768px) {
   header {
     justify-content: space-between; }
-  .img-mobile {
+  .show-mobile {
     display: none; }
-  .img-desktop {
+  .show-desktop {
     display: block; }
   .circle-icon {
     position: absolute; }
@@ -201,6 +203,9 @@ footer {
     animation-delay: 1s; }
   .animation-delay-2s {
     animation-delay: 2s; }
+  h1 {
+    font-size: 75px;
+    line-height: 79px; }
   h2 {
     font-size: 50px;
     line-height: 70px; }
@@ -209,6 +214,8 @@ footer {
     line-height: 48px; }
     h3:after {
       left: 0; }
+  p {
+    margin-top: 20px; }
   main section {
     flex-direction: row; }
     main section .moved-left {
@@ -221,6 +228,69 @@ footer {
       main section .moved-right.bring-back {
         transform: translateX(0px);
         transition: transform 1s ease-out; }
+    main section#section-one {
+      padding-top: 0;
+      margin-top: -63px;
+      justify-content: flex-end; }
+      main section#section-one .left {
+        text-align: left;
+        width: 520px; }
+        main section#section-one .left button {
+          width: 216px;
+          height: 56px;
+          margin-top: 24px; }
+        main section#section-one .left p {
+          margin-top: 44px;
+          position: relative;
+          padding-left: 22px; }
+          main section#section-one .left p:before {
+            position: absolute;
+            top: 8px;
+            left: 0;
+            content: '';
+            width: 4px;
+            height: 17px;
+            background-color: #F98621; }
+      main section#section-one .right {
+        flex-shrink: 0;
+        width: 55%;
+        position: relative;
+        margin-left: 50px; }
+        main section#section-one .right #hero-img {
+          width: 100%;
+          height: auto;
+          margin-top: 0; }
+        main section#section-one .right #hero-balloon-1 {
+          position: absolute;
+          top: 10%;
+          left: 31%;
+          width: calc(100vw / 45);
+          height: auto; }
+        main section#section-one .right #hero-balloon-2 {
+          position: absolute;
+          top: 22%;
+          left: 17%;
+          width: calc(100vw / 40);
+          height: auto; }
+        main section#section-one .right #hero-balloon-3 {
+          position: absolute;
+          top: 26%;
+          left: 30%;
+          width: calc(100vw / 25);
+          height: auto; }
+        main section#section-one .right #hero-balloon-4 {
+          position: absolute;
+          top: 6%;
+          left: 51%;
+          width: calc(100vw / 20);
+          height: auto; }
+    main section#section-two h3:after {
+      left: calc(50% - 19px);
+      bottom: 76px; }
+    main section#section-two p {
+      margin-top: 25px;
+      width: 700px;
+      line-height: 30px; }
     main section#section-three, main section#section-four, main section#section-five, main section#section-six, main section#section-seven {
       padding-top: 150px; }
     main section#section-two {
