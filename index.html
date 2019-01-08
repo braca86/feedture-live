@@ -30,16 +30,25 @@
         <div class="right">
           <img class="show-mobile" src="assets/images/section-one-mobile.jpg" alt="Feedture hero image">
           <img class="show-desktop" id="hero-img" src="assets/images/section-one-desktop.jpg" alt="Feedture hero image">
-          <img class="show-desktop" id="hero-balloon-1" src="assets/images/section-one-balon-1.svg">
-          <img class="show-desktop" id="hero-balloon-2" src="assets/images/section-one-balon-2.svg">
-          <img class="show-desktop" id="hero-balloon-3" src="assets/images/section-one-balon-3.svg">
-          <img class="show-desktop" id="hero-balloon-4" src="assets/images/section-one-balon-4.svg">
+          <img class="balloon show-desktop animation-float-plus" id="hero-balloon-1" src="assets/images/section-one-balon-1.svg">
+          <img class="balloon show-desktop animation-float-minus" id="hero-balloon-2" src="assets/images/section-one-balon-2.svg">
+          <img class="balloon show-desktop animation-float-plus animation-delay-1s" id="hero-balloon-3" src="assets/images/section-one-balon-3.svg">
+          <img class="balloon show-desktop animation-float-minus animation-delay-1s" id="hero-balloon-4" src="assets/images/section-one-balon-4.svg">
         </div>
       </section>
       <section id="section-two">
         <h3>Why Choose Us</h3>
         <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
-        <img class="show-mobile" src="assets/images/section-two-mobile.png" alt="Why choose us image">
+        <div id="slider-wrapper">
+          <div id="slider-img-wrapper">
+            <img src="assets/images/section-two-slider-1.png" id="slider-img-1" alt="Why choose us image 1">
+            <img src="assets/images/section-two-slider-2.png" id="slider-img-2" style="display: none;" alt="Why choose us image 2">
+          </div>
+          <div id="slider-controls">
+            <span id="slider-btn-1" class="slider-button active" data-id="1"></span>
+            <span id="slider-btn-2" class="slider-button" data-id="2"></span>
+          </div>
+        </div>
       </section>
       <section id="section-three" class="animate">
         <div class="right moved-right animate-child">
@@ -88,9 +97,13 @@
         <div class="left moved-left animate-child">
           <h3>Improve your ratings in app stores</h3>
           <p>Reduce the number of bad ratings you receive online and on app stores, encourage your users to provide feedback on Featured.</p>
+          <img id="section-six-phone-img" class="show-desktop" src="assets/images/section-six-iphone.png" width="306" height="556" alt="">
+          <img id="section-six-phone-img-text" class="show-desktop animation-float-plus" src="assets/images/section-six-text-img.png" width="423" height="197" alt="">
         </div>
         <div class="right moved-right animate-child">
           <img class="show-mobile" src="assets/images/section-six-mobile.png" alt="Improve rating image">
+          <img class="show-desktop" src="assets/images/section-six-ipad.png" width="881" height="660" alt="">
+          <img id="section-six-tablet-img-text" class="show-desktop animation-float-minus" src="assets/images/section-six-text-img.png" width="423" height="197" alt="">
         </div>
       </section>
       <section id="section-seven" class="animate">
@@ -110,6 +123,9 @@
       <section id="section-eight">
         <h2>Don't wait on us going live, we'll let you know when it happens</h2>
         <button type="button" name="button" class="show-form-btn">get early access</button>
+        <img id="section-eight-balloon-1" class="balloon show-desktop animation-float-plus" src="assets/images/section-eight-balloon-1.svg" alt="">
+        <img id="section-eight-balloon-2" class="balloon show-desktop animation-float-minus" src="assets/images/section-eight-balloon-2.svg" alt="">
+        <img id="section-eight-balloon-3" class="balloon show-desktop animation-float-plus animation-delay-1s" src="assets/images/section-eight-balloon-3.svg" alt="">
       </section>
     </main>
     <footer>
@@ -117,15 +133,24 @@
     </footer>
     <div id="feedture-form" style="display: none;">
       <div id="form-wrapper">
-        <div class="warning-message" id="email-warning" style="display: none;">Email is already in use.</div>
-        <div class="warning-message" id="username-warning" style="display: none;">Username is already in use.</div>
-        <label for="email-validation-message">Email:</label>
-        <input type="email" id="email">
-        <div class="input-validation-message" id="email-validation-message" style="display: none;"></div>
-        <label for="username-validation-message">Username:</label>
-        <input type="text" id="username">
-        <div class="input-validation-message" id="username-validation-message" style="display: none;"></div>
-        <button type="button" id="send-form">reserve</button>
+        <div id="close-form-btn"></div>
+        <h4>Lorem de ipsum de lorem</h4>
+        <h5>Build awesome products, save time on guess work and testing.</h5>
+        <div class="input-wrapper">
+          <label for="email-validation-message">Email:</label>
+          <input type="email" id="email">
+          <div class="input-validation-message" id="email-validation-message" style="display: none;"></div>
+        </div>
+        <div class="input-wrapper">
+          <label for="username-validation-message">User name:</label>
+          <input type="text" id="username">
+          <div class="input-validation-message" id="username-validation-message" style="display: none;"></div>
+        </div>
+        <button type="button" id="send-form">Reserve your account</button>
+        <div class="warning-messages-wrapper">
+          <span class="warning-message" id="email-warning" style="display: none;">Email is already in use.</span>
+          <span class="warning-message" id="username-warning" style="display: none;">Username is already in use.</span>
+        </div>
       </div>
     </div>
   <script type="text/javascript" src="bundle.js"></script></body>
