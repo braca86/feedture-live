@@ -311,8 +311,7 @@ footer {
     font-size: 40px;
     line-height: 48px; }
   p {
-    margin-top: 20px;
-    font-size: 14px; }
+    margin-top: 20px; }
   main {
     background-image: url(assets/images/background-curve-3.png), url(assets/images/background-curve-2.png), url(assets/images/background-curve-4.png), url(assets/images/background-curve-1.png);
     background-repeat: no-repeat;
@@ -344,7 +343,8 @@ footer {
         main section#section-one .left p {
           margin-top: 44px;
           position: relative;
-          padding-left: 22px; }
+          padding-left: 22px;
+          font-size: 14px; }
           main section#section-one .left p:before {
             position: absolute;
             top: 8px;
@@ -575,8 +575,6 @@ footer {
     line-height: 70px; }
   h3:after {
     left: 0; }
-  p {
-    font-size: 16px; }
   main section {
     flex-direction: row; }
     main section#section-one {
@@ -587,6 +585,8 @@ footer {
       main section#section-one .left {
         text-align: left;
         width: 520px; }
+        main section#section-one .left p {
+          font-size: 16px; }
       main section#section-one .right {
         width: 55%;
         margin-left: 95px;
