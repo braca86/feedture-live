@@ -256,6 +256,8 @@ footer {
           left: 0px;
           color: red;
           font-size: 14px; }
+    #feedture-form #form-wrapper #tnx-message {
+      padding-bottom: 60px; }
     #feedture-form #form-wrapper .warning-messages-wrapper {
       position: absolute;
       bottom: 40px;
