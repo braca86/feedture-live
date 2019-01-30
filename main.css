@@ -183,6 +183,8 @@ footer {
     footer p span {
       display: block;
       font-size: 13px; }
+      footer p span a {
+        color: #000000; }
 
 #feedture-form {
   position: fixed;
@@ -198,10 +200,11 @@ footer {
   #feedture-form #form-wrapper {
     width: 98%;
     max-width: 714px;
+    max-height: 92vh;
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    padding: 44px 44px 80px;
+    padding: 44px 44px 0;
     border-radius: 10px;
     text-align: center;
     position: relative; }
@@ -219,37 +222,40 @@ footer {
       background-repeat: no-repeat; }
     #feedture-form #form-wrapper h5 {
       margin: 20px 0 42px; }
-    #feedture-form #form-wrapper .input-wrapper {
-      position: relative;
-      text-align: left; }
-      #feedture-form #form-wrapper .input-wrapper label {
-        display: block;
-        font-size: 16px;
-        line-height: 30px;
-        font-weight: 400;
-        font-family: 'Avenir';
-        text-align: left;
-        margin-top: 24px; }
-      #feedture-form #form-wrapper .input-wrapper input {
-        height: 63px;
-        width: 100%;
-        border-radius: 2px;
-        background-color: #F8F8F8;
-        border: 1px solid #ECECEC;
-        font-size: 16px;
-        font-weight: 400;
-        font-family: 'Avenir';
-        outline: none;
-        padding-left: 10px;
-        margin-top: 16px; }
-        #feedture-form #form-wrapper .input-wrapper input.error {
-          border-color: red; }
-      #feedture-form #form-wrapper .input-wrapper .input-validation-message {
-        position: absolute;
-        top: 138px;
-        left: 0px;
-        color: red;
-        font-size: 14px; }
+    #feedture-form #form-wrapper #fields-btn-wrapper {
+      padding-bottom: 60px;
+      overflow-y: auto; }
+      #feedture-form #form-wrapper #fields-btn-wrapper .input-wrapper {
+        position: relative;
+        text-align: left; }
+        #feedture-form #form-wrapper #fields-btn-wrapper .input-wrapper label {
+          display: block;
+          font-size: 16px;
+          line-height: 30px;
+          font-weight: 400;
+          font-family: 'Avenir';
+          text-align: left;
+          margin-top: 24px; }
+        #feedture-form #form-wrapper #fields-btn-wrapper .input-wrapper input {
+          height: 63px;
+          width: 100%;
+          border-radius: 2px;
+          background-color: #F8F8F8;
+          border: 1px solid #ECECEC;
+          font-size: 16px;
+          font-weight: 400;
+          font-family: 'Avenir';
+          outline: none;
+          padding-left: 10px;
+          margin-top: 16px; }
+          #feedture-form #form-wrapper #fields-btn-wrapper .input-wrapper input.error {
+            border-color: red; }
+        #feedture-form #form-wrapper #fields-btn-wrapper .input-wrapper .input-validation-message {
+          position: absolute;
+          top: 138px;
+          left: 0px;
+          color: red;
+          font-size: 14px; }
     #feedture-form #form-wrapper .warning-messages-wrapper {
       position: absolute;
       bottom: 40px;
@@ -409,7 +415,7 @@ footer {
         main section#section-two #slider-wrapper #slider-controls {
           margin-top: 40px; }
     main section#section-three, main section#section-four, main section#section-five, main section#section-six, main section#section-seven {
-      padding-top: 200px; }
+      padding-top: 150px; }
     main section#section-three .left {
       width: 728px;
       height: 523px;
@@ -578,6 +584,9 @@ footer {
   main section {
     flex-direction: row; }
     main section#section-one {
+      background-image: url(assets/images/dot-1-hero.svg), url(assets/images/dot-2-hero.svg), url(assets/images/dot-3-hero.svg);
+      background-repeat: no-repeat;
+      background-position: 40% 10%, 5% 65%, 44% 90%;
       padding-top: 0;
       margin-top: -63px;
       justify-content: flex-end;
@@ -591,6 +600,10 @@ footer {
         width: 55%;
         margin-left: 95px;
         margin-top: 0; }
+    main section#section-two {
+      background-image: url(assets/images/section-two-background.svg), url(assets/images/dot-1-why.svg), url(assets/images/dot-2-why.svg);
+      background-size: 600px, 13px, 15px;
+      background-position: 43% 250px, 85% 50%, 10% 85%; }
     main section#section-three, main section#section-four, main section#section-five, main section#section-six, main section#section-seven {
       padding-top: 250px; }
     main section#section-three {
@@ -618,6 +631,9 @@ footer {
         width: 440px;
         text-align: left; }
     main section#section-six {
+      background-image: url(assets/images/dot-1-devices.svg);
+      background-repeat: no-repeat;
+      background-position: 46% 88%;
       align-items: flex-start; }
       main section#section-six .left {
         margin-top: 25px;
@@ -651,8 +667,8 @@ footer {
 
 @media only screen and (min-width: 1400px) {
   main section#section-two {
-    background-size: 900px;
-    background-position: 41% 240px; }
+    background-size: 900px, 13px, 15px;
+    background-position: 41% 240px, 85% 50%, 10% 85%; }
     main section#section-two #slider-wrapper #slider-img-wrapper img {
       height: 550px; } }
 
