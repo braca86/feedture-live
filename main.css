@@ -79,7 +79,7 @@ p {
   font-family: 'Avenir';
   font-size: 16px;
   line-height: 31px;
-  color: #9A9A9A; }
+  color: #3c3c3c; }
 
 .show-desktop {
   display: none; }
@@ -126,6 +126,14 @@ main section {
     main section#section-two p {
       margin-top: 12px;
       line-height: 25px; }
+    main section#section-two .arrow-down {
+      margin-top: 20px;
+      width: 70px;
+      height: 70px;
+      background-image: url(assets/images/arrow-down.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      animation: arrowpulse 3s ease-in-out infinite; }
     main section#section-two #slider-wrapper {
       margin-top: 20px; }
       main section#section-two #slider-wrapper #slider-img-wrapper {
@@ -184,7 +192,11 @@ footer {
       display: block;
       font-size: 13px; }
       footer p span a {
+        text-decoration: none;
         color: #000000; }
+        footer p span a span {
+          display: inline-block;
+          text-decoration: underline; }
 
 #feedture-form {
   position: fixed;
@@ -252,7 +264,7 @@ footer {
             border-color: red; }
         #feedture-form #form-wrapper #fields-btn-wrapper .input-wrapper .input-validation-message {
           position: absolute;
-          top: 138px;
+          top: 112px;
           left: 0px;
           color: red;
           font-size: 14px; }
@@ -289,6 +301,14 @@ footer {
     transform: translatey(20px); }
   100% {
     transform: translatey(0px); } }
+
+@keyframes arrowpulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
 
 @media only screen and (min-width: 768px) {
   header {
@@ -400,7 +420,7 @@ footer {
       background-image: url(assets/images/section-two-background.svg);
       background-repeat: no-repeat;
       background-size: 500px;
-      background-position: 37% 250px; }
+      background-position: 37% 340px; }
       main section#section-two h3:after {
         left: calc(50% - 19px);
         bottom: 76px; }
@@ -573,7 +593,7 @@ footer {
 @media only screen and (min-width: 992px) {
   main section#section-two {
     background-size: 600px;
-    background-position: 43% 250px; }
+    background-position: 43% 340px; }
     main section#section-two #slider-wrapper #slider-img-wrapper img {
       height: 350px; } }
 
@@ -605,7 +625,7 @@ footer {
     main section#section-two {
       background-image: url(assets/images/section-two-background.svg), url(assets/images/dot-1-why.svg), url(assets/images/dot-2-why.svg);
       background-size: 600px, 13px, 15px;
-      background-position: 43% 250px, 85% 50%, 10% 85%; }
+      background-position: 43% 340px, 85% 50%, 10% 85%; }
     main section#section-three, main section#section-four, main section#section-five, main section#section-six, main section#section-seven {
       padding-top: 250px; }
     main section#section-three {
@@ -670,7 +690,7 @@ footer {
 @media only screen and (min-width: 1400px) {
   main section#section-two {
     background-size: 900px, 13px, 15px;
-    background-position: 41% 240px, 85% 50%, 10% 85%; }
+    background-position: 41% 330px, 85% 50%, 10% 85%; }
     main section#section-two #slider-wrapper #slider-img-wrapper img {
       height: 550px; } }
 
