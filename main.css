@@ -65,13 +65,13 @@ h3 {
     bottom: -22px; }
 
 h4 {
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 18px;
+  line-height: 25px;
   font-family: 'Proxima Nova Rg'; }
 
 h5 {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 20px;
   font-family: 'Avenir';
   font-weight: 400; }
 
@@ -122,7 +122,7 @@ main section {
     text-align: center;
     padding: 86px 20px 0; }
     main section#section-two h3:after {
-      bottom: 46px; }
+      top: -22px; }
     main section#section-two p {
       margin-top: 12px;
       line-height: 25px; }
@@ -219,7 +219,8 @@ footer {
     padding: 44px 44px 0;
     border-radius: 10px;
     text-align: center;
-    position: relative; }
+    position: relative;
+    overflow-y: auto; }
     #feedture-form #form-wrapper #close-form-btn {
       height: 51px;
       width: 51px;
@@ -235,8 +236,7 @@ footer {
     #feedture-form #form-wrapper h5 {
       margin: 20px 0 42px; }
     #feedture-form #form-wrapper #fields-btn-wrapper {
-      padding-bottom: 60px;
-      overflow-y: auto; }
+      padding-bottom: 60px; }
       #feedture-form #form-wrapper #fields-btn-wrapper .input-wrapper {
         position: relative;
         text-align: left; }
@@ -338,6 +338,12 @@ footer {
   h3 {
     font-size: 40px;
     line-height: 48px; }
+  h4 {
+    font-size: 25px;
+    line-height: 35px; }
+  h5 {
+    font-size: 16px;
+    line-height: 22px; }
   p {
     margin-top: 20px; }
   main {
