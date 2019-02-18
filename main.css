@@ -589,12 +589,7 @@ footer {
         width: calc(100vw / 45);
         height: auto;
         right: 5%;
-        top: 165px; }
-  #feedture-form #form-wrapper #close-form-btn {
-    top: -20px;
-    right: -20px;
-    box-shadow: 0 15px 23px 0 rgba(0, 0, 0, 0.06);
-    border: 1px solid #979797; } }
+        top: 165px; } }
 
 @media only screen and (min-width: 992px) {
   main section#section-two {
