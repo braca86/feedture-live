@@ -270,15 +270,6 @@ footer {
           font-size: 14px; }
     #feedture-form #form-wrapper #tnx-message {
       padding-bottom: 60px; }
-    #feedture-form #form-wrapper .warning-messages-wrapper {
-      position: absolute;
-      bottom: 40px;
-      left: 0;
-      right: 0; }
-      #feedture-form #form-wrapper .warning-messages-wrapper .warning-message {
-        color: red;
-        font-size: 16px;
-        font-family: 'Avenir'; }
     #feedture-form #form-wrapper button {
       width: 100%;
       max-width: 377px;
@@ -546,16 +537,16 @@ footer {
       position: relative;
       margin-top: 60px; }
       main section#section-seven .right #sec-7-icon-1 {
-        top: -20px;
-        right: 80px; }
+        top: -70px;
+        right: 30px; }
       main section#section-seven .right #sec-7-icon-2 {
-        bottom: 47px;
-        right: 51px; }
+        bottom: -20px;
+        right: 0px; }
       main section#section-seven .right #sec-7-icon-3 {
-        bottom: 13px;
-        left: -32px; }
+        bottom: -10px;
+        left: -40px; }
       main section#section-seven .right #sec-7-icon-4 {
-        top: 10px;
+        top: -10px;
         left: 38px; }
     main section#section-eight {
       margin-top: 120px;
